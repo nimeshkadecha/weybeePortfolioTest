@@ -20,8 +20,12 @@
             </ul>
         </nav>
     </header>
+
+
     <!-- Home Section -->
     <section id="home">
+        <div class="vanta-bg"></div>
+        <!-- VANTA Background Layer -->
         <div class="container">
             <div class="home-content">
                 <div class="home-text">
@@ -260,6 +264,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            VANTA.RINGS({
+                el: ".vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
